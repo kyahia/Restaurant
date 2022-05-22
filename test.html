@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Test</title>
+   <style>
+      header{
+         position: relative;
+      }
+      body{
+         background-color: red;
+      }
+      nav{
+         position: relative;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 1em;
+         font-size: 3rem;
+      }
+      button{
+         font-size: inherit;
+         width: 2em;
+         opacity: 0.5;
+      }
+      button:hover{
+         opacity: 1;
+      }
+      .blue{
+         position: absolute;
+         top: 0;
+         left: 0;
+         height: 3rem;
+         background-color: aqua;
+         opacity: 0.5;
+      }
+   </style>
+</head>
+<body>
+   <header>
+      <div class="blue"></div>
+      <nav>
+         <button>A</button><button>B</button><button>C</button>
+      </nav>
+   </header>
+</body>
+</html>

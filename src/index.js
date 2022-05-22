@@ -1,5 +1,5 @@
 import './styles.css';
-//import dishesList from './menu';
+import dishesList from './menu';
 
 const mainWrapper = document.querySelector('.content');
 const header = document.createElement('header');
@@ -13,13 +13,18 @@ const footIdeaSrc = document.createElement('p'); footIdeaSrc.textContent = "(c) 
 footer.appendChild(footEditor); footer.appendChild(footImageSrc); footer.appendChild(footIdeaSrc);
 
 // Create header elements
+const btns = document.createElement('nav');
 const homeBtn = document.createElement('button'); homeBtn.textContent = "Home";
 const menuBtn = document.createElement('button'); menuBtn.textContent = "Menu";
 const contactBtn = document.createElement('button'); contactBtn.textContent = "Contact";
 
-header.appendChild(homeBtn); header.appendChild(menuBtn); header.appendChild(contactBtn);
+btns.appendChild(homeBtn); btns.appendChild(menuBtn); btns.appendChild(contactBtn);
 
 // header
+const blueBar = document.createElement('div');
+blueBar.className = 'blue-bar';
+header.appendChild(blueBar);
+header.appendChild(btns)
 mainWrapper.appendChild(header);
 
 // build welcome page
